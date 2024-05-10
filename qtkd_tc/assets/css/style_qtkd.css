@@ -1448,7 +1448,7 @@ hr {
   .cs-pagination.cs-style1 li {
     height: 8px;
     width: 25px;
-    background-color: #5e2ced;
+    background-color: #005bbb;
     border-radius: 3px;
     margin: 0 12px 0 0;
     cursor: pointer;
@@ -4220,7 +4220,7 @@ a.cs-demo__box.cs-style1:hover {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #5cbe2d;
+      background-color: #005bbb;
       top: 0;
       border-radius: 2px; }
 
@@ -5475,7 +5475,7 @@ ul.page-numbers {
     content: '';
     height: 4px;
     width: 50px;
-    background-color: #5cbe2d;
+    background-color: #005bbb;
     position: absolute;
     left: 50%;
     top: 0;
