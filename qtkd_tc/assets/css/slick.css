@@ -113,3 +113,10 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+@media (min-width: 768px) {}
+@media (max-width: 767px) {
+  #slogan_desc > div > span {
+    display: none;
+  }
+}
