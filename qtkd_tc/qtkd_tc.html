@@ -574,11 +574,13 @@
     <div class="cs-cta-in text-center cs-bg__parallax" data-src="assets/img/insurance/cta-bg.png" style="background-image: url(assets/img/insurance/cta-bg.png;); background-position: center -16.6313px;">
       <div class="container">
         <div class="cs-cta__in">
-          <h2 class="cs-cta__title">Bạn đã sẵn sàng đăng ký xét tuyển chưa?</h2>
-          <div class="cs-cta__btn">
-            <a href="#" class="cs-btn cs-style1 cs-color3 cs-primary__font">
-              <span class="cs-btn__text">Đăng ký xét tuyển</span>
-            </a>
+          <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="cs-newsletter cs-style1">
+              <input type="hidden" name="apikey" value="ad46cf8b-0835-4d54-b2df-4afef89b0729">
+              <input type="text" name="name" placeholder="Name" class="cs-newsletter__input" required="">
+              <input type="email" name="email" placeholder="Email" class="cs-newsletter__input" required="">
+              <button type="submit" class="cs-btn cs-style1 cs-color3 cs-primary__font">Đăng ký xét tuyển</button>
+            </form>
           </div>
         </div>
       </div>
