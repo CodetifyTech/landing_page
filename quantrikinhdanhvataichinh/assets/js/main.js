@@ -579,5 +579,46 @@
     });
 
   }
+  
+  $(document).ready(function() {
+    let $form = $("#send_mail_form");
+    let $btnSubmit = $form.find("[type=submit]");
+    const nganhIndex = 3;
+
+    $form.on("submit", function(e) {
+        e.preventDefault();
+
+        let formData = new FormData(this);
+        sendData(formData.get("name"), formData.get("email"), formData.get("sdt"));
+    });
+
+    const sendData = async (name, email, sdt) => {
+        const formdata = new FormData();
+        formdata.append("name", name);
+        formdata.append("email", email);
+        formdata.append("sdt", sdt);
+        formdata.append("major", nganhIndex);
+
+        const requestOptions = {
+            method: "POST",
+            body: formdata,
+        };
+        
+        $btnSubmit.text("Đang gửi...").prop("disabled", true);
+
+        try {
+            let response = await fetch("https://xettuyen.fft.vn/api/landing_page/send-mail", requestOptions);
+            let result = await response.text();
+            alert("Gửi thành công");
+            console.log(result);
+        } catch (error) {
+            alert("Lỗi, thử lại sau");
+        } finally {
+            $btnSubmit.text("Gửi ngay").prop("disabled", false);
+            $form[0].reset();
+        }
+    }
+});
+
 
 })(jQuery); // End of use strict

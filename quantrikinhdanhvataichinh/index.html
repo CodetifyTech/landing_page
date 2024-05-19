@@ -579,28 +579,22 @@
             <div class="cs-text__box cs-style1">
               <h2 class="cs-text__box__title text-center">NHẬN THÔNG TIN TƯ VẤN</h2>
               <div class="cs-height__25 cs-height__lg__25"></div>
-              <form action="https://api.web3forms.com/submit" method="POST" class="cs-form cs-style2">
-                <input type="hidden" name="apikey" value="ad46cf8b-0835-4d54-b2df-4afef89b0729">
-                <!-- Optional: Can be type="hidden" or type="text" for subject -->
-                <input type="hidden" name="subject" value="Submission from Lala Template">
-                <!-- If javascript, use "window.location.hash" for redirects -->
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              <form id="send_mail_form" class="cs-form cs-style2 newsletter-form" data-toggle="validator" >
                 <!-- Main Form Field -->
                 <div class="row">
                   <div class="col-sm-12">
-                    <input type="text" name="name" class="cs-form__field" placeholder="Họ và tên" required="">
+                    <input type="text" class="cs-form__field input-newsletter" placeholder="Họ và tên" name="name"
+                        required autocomplete="off">
                     <div class="cs-height__25 cs-height__lg__25"></div>
                   </div>
                   <div class="col-sm-12">
-                    <input type="text" name="number" class="cs-form__field" placeholder="Số điện thoại" required="">
+                    <input type="text" class="cs-form__field input-newsletter" placeholder="Địa chỉ Email" name="email"
+                        required autocomplete="off">
                     <div class="cs-height__25 cs-height__lg__25"></div>
                   </div>
                   <div class="col-sm12">
-                    <input type="email" name="email" class="cs-form__field" placeholder="Email" required="">
-                    <div class="cs-height__25 cs-height__lg__25"></div>
-                  </div>
-                  <div class="col-sm-12">
-                    <input name="text" name="address" class="cs-form__field" placeholder="Địa chỉ" required="">
+                    <input type="text" class="cs-form__field input-newsletter" placeholder="Số điện thoại" name="sdt"
+                        required autocomplete="off">
                     <div class="cs-height__25 cs-height__lg__25"></div>
                   </div>
                   <div class="col-lg-12">
