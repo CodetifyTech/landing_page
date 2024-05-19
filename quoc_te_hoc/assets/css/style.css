@@ -830,9 +830,6 @@ Edu Banner Area CSS
 }
 
 .subscribe-inner-area form .default-btn {
-  position: absolute;
-  right: 20px;
-  top: 10px;
   background-color: var(--mainColor);
   color: var(--whiteColor);
 }
