@@ -761,7 +761,7 @@ Edu Banner Area CSS
 .subscribe-inner-area form {
   position: relative;
   margin-top: 30px;
-  background-color: var(--whiteColor);
+ 
   padding: 15px;
   border-radius: 6px;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
