@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 
   "use strict";
 
@@ -40,18 +40,18 @@
   /*--------------------------------------------------------------
     Scripts initialization
   --------------------------------------------------------------*/
-  $.exists = function(selector) {
+  $.exists = function (selector) {
     return $(selector).length > 0;
   };
 
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     $(window).trigger("scroll");
     $(window).trigger("resize");
     isotopInit();
     preloader();
   });
 
-  $(document).on("ready", function() {
+  $(document).on("ready", function () {
     $(window).trigger("resize");
     mainNav();
     stickyHeader();
@@ -77,11 +77,11 @@
     new WOW().init();
   });
 
-  $(window).on("resize", function() {
+  $(window).on("resize", function () {
     isotopInit();
   });
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     stickyHeader();
     parallaxEffect();
     counterInit();
@@ -101,13 +101,13 @@
   function mainNav() {
     $('.cs-nav').append('<span class="cs-munu__toggle"><span></span></span>');
     $('.menu-item-has-children').append('<span class="cs-munu__dropdown__toggle"></span>');
-    $('.cs-munu__toggle').on('click', function() {
+    $('.cs-munu__toggle').on('click', function () {
       $(this).toggleClass("cs-toggle__active").siblings('.cs-nav__list').slideToggle();;
     });
-    $('.cs-munu__dropdown__toggle').on('click', function() {
+    $('.cs-munu__dropdown__toggle').on('click', function () {
       $(this).toggleClass('active').siblings('ul').slideToggle();
     });
-    $('.cs-burger__btn, .cs-close').on('click', function() {
+    $('.cs-burger__btn, .cs-close').on('click', function () {
       $('.cs-nav').toggleClass('active');
     })
     // Mega Menu
@@ -136,7 +136,7 @@
     4. Dynamic Background
   --------------------------------------------------------------*/
   function dynamicBackground() {
-    $('[data-src]').each(function() {
+    $('[data-src]').each(function () {
       var src = $(this).attr('data-src');
       $(this).css({
         'background-image': 'url(' + src + ')'
@@ -169,7 +169,7 @@
     7. Overlay
   --------------------------------------------------------------*/
   function overlay() {
-    $('[data-overlay]').each(function() {
+    $('[data-overlay]').each(function () {
       $(this).append('<div class="cs-overlay"></div>')
       var overlay = $(this).attr('data-overlay');
       $(this).children('.cs-overlay').css({
@@ -183,7 +183,7 @@
   --------------------------------------------------------------*/
   function slickInit() {
     if ($.exists('.cs-slider')) {
-      $('.cs-slider').each(function() {
+      $('.cs-slider').each(function () {
         // Slick Variable
         var $ts = $(this).find('.cs-slider__container');
         var $slickActive = $(this).find('.cs-slider__wrapper');
@@ -237,33 +237,33 @@
           slidesToShow: slidesPerView,
           // slidesToScroll: slidesPerView,
           responsive: [{
-              breakpoint: 1600,
-              settings: {
-                slidesToShow: lgPoint,
-                // slidesToScroll: lgPoint,
-              }
-            },
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: mdPoint,
-                // slidesToScroll: mdPoint,
-              }
-            },
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: smPoint,
-                // slidesToScroll: smPoint,
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: xsPoing,
-                // slidesToScroll: xsPoing,
-              }
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: lgPoint,
+              // slidesToScroll: lgPoint,
             }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: mdPoint,
+              // slidesToScroll: mdPoint,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: smPoint,
+              // slidesToScroll: smPoint,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: xsPoing,
+              // slidesToScroll: xsPoing,
+            }
+          }
           ]
         });
       })
@@ -303,13 +303,13 @@
         }
       });
       /* Active Class of Portfolio*/
-      $('.cs-isotop__filter ul li').on('click', function(event) {
+      $('.cs-isotop__filter ul li').on('click', function (event) {
         $(this).siblings('.active').removeClass('active');
         $(this).addClass('active');
         event.preventDefault();
       });
       /*=== Portfolio filtering ===*/
-      $('.cs-isotop__filter ul').on('click', 'a', function() {
+      $('.cs-isotop__filter ul').on('click', 'a', function () {
         var filterElement = $(this).attr('data-filter');
         $(this).parents('.cs-isotop__filter').next().isotope({
           filter: filterElement
@@ -322,7 +322,7 @@
     10. Review
   --------------------------------------------------------------*/
   function review() {
-    $('.cs-review').each(function() {
+    $('.cs-review').each(function () {
       var review = $(this).data('review');
       var reviewVal = (review * 20) + "%";
       $(this).find('.cs-review-in').css('width', reviewVal);
@@ -333,7 +333,7 @@
     11. Light Gallery
   --------------------------------------------------------------*/
   function lightGalleryInit() {
-    $('.cs-lightgallery').each(function() {
+    $('.cs-lightgallery').each(function () {
       $(this).lightGallery({
         selector: '.cs-lightbox-item',
         subHtmlSelectorRelative: false,
@@ -347,14 +347,14 @@
     12. Modal Video
   --------------------------------------------------------------*/
   function modalVideo() {
-    $(document).on('click', '.cs-video__open', function(e) {
+    $(document).on('click', '.cs-video__open', function (e) {
       e.preventDefault();
       var video = $(this).attr('href');
       $('.cs-video__popup__container iframe').attr('src', video);
       $('.cs-video__popup').addClass('active');
 
     });
-    $('.cs-video__popup__close, .cs-video__popup__layer').on('click', function(e) {
+    $('.cs-video__popup__close, .cs-video__popup__layer').on('click', function (e) {
       $('.cs-video__popup').removeClass('active');
       $('html').removeClass('overflow-hidden');
       $('.cs-video__popup__container iframe').attr('src', 'about:blank')
@@ -367,7 +367,7 @@
     13. Hobble Effect
   --------------------------------------------------------------*/
   function hobbleEffect() {
-    $(document).on('mousemove', '.cs-hobble', function(event) {
+    $(document).on('mousemove', '.cs-hobble', function (event) {
       var halfW = (this.clientWidth / 2);
       var halfH = (this.clientHeight / 2);
       var coorX = (halfW - (event.pageX - $(this).offset().left));
@@ -383,22 +383,22 @@
       var degX5 = (((coorY / halfH) * -30)) + 'px';
       var degY5 = ((coorX / halfW) * 60) + 'px';
 
-      $(this).find('.cs-hover__layer1').css('transform', function() {
+      $(this).find('.cs-hover__layer1').css('transform', function () {
         return 'perspective( 800px ) translate3d( 0, 0, 0 ) rotateX(' + degX1 + ') rotateY(' + degY1 + ')';
       });
-      $(this).find('.cs-hover__layer2').css('transform', function() {
+      $(this).find('.cs-hover__layer2').css('transform', function () {
         return 'perspective( 800px ) translateY(' + degX2 + ') translateX(' + degY2 + ')';
       });
-      $(this).find('.cs-hover__layer3').css('transform', function() {
+      $(this).find('.cs-hover__layer3').css('transform', function () {
         return 'perspective( 800px ) translateX(' + degX3 + ') translateY(' + degY3 + ') scale(1.02)';
       });
-      $(this).find('.cs-hover__layer4').css('transform', function() {
+      $(this).find('.cs-hover__layer4').css('transform', function () {
         return 'perspective( 800px ) translate3d( 0, 0, 0 ) rotateX(' + degX4 + ') rotateY(' + degY4 + ')';
       });
-      $(this).find('.cs-hover__layer5').css('transform', function() {
+      $(this).find('.cs-hover__layer5').css('transform', function () {
         return 'perspective( 800px ) translateY(' + degX5 + ') translateX(' + degY5 + ')';
       });
-    }).on('mouseout', '.cs-hobble', function() {
+    }).on('mouseout', '.cs-hobble', function () {
       $(this).find('.cs-hover__layer').removeAttr('style');
       $(this).find('.cs-hover__layer1').removeAttr('style');
       $(this).find('.cs-hover__layer2').removeAttr('style');
@@ -411,7 +411,7 @@
     14. Parallax
   --------------------------------------------------------------*/
   function parallaxEffect() {
-    $('.cs-bg__parallax, .cs-parallax').each(function() {
+    $('.cs-bg__parallax, .cs-parallax').each(function () {
       var windowScroll = $(document).scrollTop(),
         windowHeight = $(window).height(),
         barOffset = $(this).offset().top,
@@ -434,7 +434,7 @@
         $(this).find('.cs-to__right__up').css('transform', `translate(${miniEffectPixel}px, -${miniEffectPixel}px)`);
         $(this).find('.cs-to__left__up').css('transform', `translate(-${miniEffectPixel}px, -${miniEffectPixel}px)`);
         $(this).find('.cs-to__rotate').css('transform', `rotate(${miniEffectPixel}deg)`);
-        $(this).find('.cs-to__rotate__up').css({'transform': `rotate(-${mediumEffectPixel}deg)`, "margin-top": `-${largeEffectPixel}px`});
+        $(this).find('.cs-to__rotate__up').css({ 'transform': `rotate(-${mediumEffectPixel}deg)`, "margin-top": `-${largeEffectPixel}px` });
         $(this).css('background-position', `center -${largeEffectPixel}px`);
       }
     });
@@ -445,7 +445,7 @@
   --------------------------------------------------------------*/
   function counterInit() {
     if ($.exists('.odometer')) {
-      $(window).on('scroll', function() {
+      $(window).on('scroll', function () {
         function winScrollPosition() {
           var scrollPos = $(window).scrollTop(),
             winHeight = $(window).height();
@@ -458,7 +458,7 @@
 
         if (elemOffset < winScrollPosition()) {
 
-          $('.odometer').each(function() {
+          $('.odometer').each(function () {
             $(this).html($(this).data('count-to'));
           });
         }
@@ -470,7 +470,7 @@
     16. Tabs
   --------------------------------------------------------------*/
   function tabs() {
-    $('.cs-tabs.cs-fade__tabs .cs-tab__links a').on('click', function(e) {
+    $('.cs-tabs.cs-fade__tabs .cs-tab__links a').on('click', function (e) {
       var currentAttrValue = $(this).attr('href');
       $('.cs-tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
       $(this).parents('li').addClass('active').siblings().removeClass('active');
@@ -485,7 +485,7 @@
     var $this = $(this);
     $('.cs-accordian').children('.cs-accordian-body').hide();
     $('.cs-accordian.active').children('.cs-accordian-body').show();
-    $('.cs-accordian__head').on('click', function() {
+    $('.cs-accordian__head').on('click', function () {
       $(this).parent('.cs-accordian').siblings().children('.cs-accordian-body').slideUp(250);
       $(this).siblings().slideDown(250);
       /* Accordian Active Class */
@@ -498,7 +498,7 @@
     18. Progress Bar
   --------------------------------------------------------------*/
   function progressBar() {
-    $('.cs-progress').each(function() {
+    $('.cs-progress').each(function () {
       var progressPercentage = $(this).data('progress') + "%";
       $(this).find('.cs-progress__in').css('width', progressPercentage);
     });
@@ -509,11 +509,11 @@
   --------------------------------------------------------------*/
   function countDown() {
     if ($.exists('.cs-countdown')) {
-      $('.cs-countdown').each(function() {
+      $('.cs-countdown').each(function () {
         var _this = this;
         var el = $(_this).data('countdate');
         var countDownDate = new Date(el).getTime();
-        var x = setInterval(function() {
+        var x = setInterval(function () {
           var now = new Date().getTime();
           var distance = countDownDate - now;
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -554,7 +554,7 @@
   --------------------------------------------------------------*/
   function smoothMove() {
     if ($.exists('.cs-smooth__move')) {
-      $('.cs-smooth__move').on('click', function() {
+      $('.cs-smooth__move').on('click', function () {
         var thisAttr = $(this).attr('href');
         if ($(thisAttr).length) {
           var scrollPoint = $(thisAttr).offset().top;
@@ -571,7 +571,7 @@
     22. Scroll Up
   --------------------------------------------------------------*/
   function scrollUp() {
-    $('#cs-scrollup').on('click', function(e) {
+    $('#cs-scrollup').on('click', function (e) {
       e.preventDefault();
       $('html,body').animate({
         scrollTop: 0
@@ -579,47 +579,7 @@
     });
 
   }
-  
-  $(document).ready(function() {
-    let $form = $("#send_mail_form");
-    let $btnSubmit = $form.find("[type=submit]");
-    const nganhIndex = 3;
 
-    $form.on("submit", function(e) {
-        e.preventDefault();
-
-        let formData = new FormData(this);
-        sendData(formData.get("name"), formData.get("email"), formData.get("sdt"), formData.get("address"));
-    });
-
-    const sendData = async (name, email, sdt, address) => {
-        const formdata = new FormData();
-        formdata.append("name", name);
-        formdata.append("email", email);
-        formdata.append("sdt", sdt);
-        formdata.append("address", address);
-        formdata.append("major", nganhIndex);
-
-        const requestOptions = {
-            method: "POST",
-            body: formdata,
-        };
-        
-        $btnSubmit.text("Đang gửi...").prop("disabled", true);
-
-        try {
-            let response = await fetch("https://xettuyen.fft.vn/api/landing_page/send-mail", requestOptions);
-            let result = await response.text();
-            alert("Gửi thành công");
-            console.log(result);
-        } catch (error) {
-            alert("Lỗi, thử lại sau");
-        } finally {
-            $btnSubmit.text("Gửi ngay").prop("disabled", false);
-            $form[0].reset();
-        }
-    }
-});
 
 
 })(jQuery); // End of use strict
