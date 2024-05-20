@@ -42,6 +42,18 @@
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
+:root {
+  --fontFamily:  "Roboto", sans-serif;
+  --mainColor: #03045e;
+  --secounderyColor: #30bead;
+  --paragraphColor: #7b7b8a;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --footerColor: #0c1427;
+  --fontSize: 18px;
+  --transition: .5s;
+}
+
 body,
 html {
   color: #5d6b85;
@@ -5943,5 +5955,78 @@ ul.page-numbers {
 
 
 .edu-platfrom-content .default-btn{
+  margin-top: 30px;
+}
+/*default-btn*/
+.default-btn {
+  background-color: var(--mainColor);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  padding: 15px 32px;
+  color: var(--whiteColor);
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  font-size: var(--fontSize);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.default-btn:hover {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  box-shadow: 0px 0px 0px 2.5px var(--whiteColor) inset, 0px 0px 0px 3px var(--mainColor);
+}
+
+.edu-section-title .default-btn {
+  display: inline-block;
+  position: absolute;
+  font-weight: 500;
+  bottom: 5px;
+  right: 0;
+}
+
+.edu-banner-content .fl-default-btn {
+  margin-top: 15px;
+}
+
+.edu-banner-content .fl-default-btn:hover {
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+}
+.subscribe-inner-area form .default-btn {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.edu-banner-btns .default-btn{
+  margin-bottom: 30px;
+}
+.edu-about-content .default-btn{
+  margin-top: 25px;
+}
+.subscribe-from form .default-btn {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  background-color: var(--whiteColor);
+  color: var(--secounderyColor);
+}
+
+.subscribe-from form .default-btn:hover{
+  box-shadow: none;
+}
+
+.footer-newsletter-info form .default-btn {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  width: 100%;
+}
+
+.footer-newsletter-info form .default-btn:hover {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.edu-testimonial-content .default-btn{
   margin-top: 30px;
 }
