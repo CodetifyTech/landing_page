@@ -1,31 +1,6 @@
 let form = document.getElementById("send_mail_form");
 let form_2 = document.getElementById("send_mail_form_footer");
 let btnSubmit = form.querySelector("[type=submit]");
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    let formData = new FormData(form);
-    sendData(
-        formData.get("name"),
-        formData.get("email"),
-        formData.get("sdt"),
-        formData.get("address")
-    );
-});
-
-// Nếu có 2 form thì dùng cái này 
-form_2.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    let formData = new FormData(form_2);
-    sendData(
-        formData.get("name"),
-        formData.get("email"),
-        formData.get("sdt"),
-        formData.get("address")
-    );
-});
-
 const sendData = async (name, email, sdt, address) => {
     const myHeaders = new Headers();
     myHeaders.append("accept", "application/json, text/plain, */*");
@@ -64,3 +39,29 @@ const sendData = async (name, email, sdt, address) => {
             console.log(error);
         });
 };
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let formData = new FormData(form);
+    sendData(
+        formData.get("name"),
+        formData.get("email"),
+        formData.get("sdt"),
+        formData.get("address")
+    );
+});
+
+// Nếu có 2 form thì dùng cái này 
+form_2.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let formData = new FormData(form_2);
+    sendData(
+        formData.get("name"),
+        formData.get("email"),
+        formData.get("sdt"),
+        formData.get("address")
+    );
+});
+
