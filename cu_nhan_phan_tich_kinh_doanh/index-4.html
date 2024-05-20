@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
   <link rel="stylesheet" href="assets/css/animate.min.css">
   <link rel="stylesheet" href="assets/css/animated-headline.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -29,79 +30,19 @@
   </div>
   <!-- Start Header Section -->
   <header class="cs-site__header cs-style1 cs-color1">
-    <div class="cs-main__header">
+    <div class="edu-navbar-area navbar-area">
       <div class="container">
         <div class="cs-main__header__in">
           <div class="cs-main__header__left">
-            <a class='cs-site__branding' href='index.html'><img src="assets/img/insurance/logo-icon.png" alt=""></a>
+            <a class='cs-site__branding' href='index.html'><img src="assets/img/insurance/logo.svg" alt="" id="main_logo"></a>
           </div>
           <div class="cs-main__header__right">
             <div class="cs-nav">
               <ul class="cs-nav__list">
-                <li class="menu-item-has-children cs-mega-menu"><a href="#">Trang chủ</a>
-                  <ul class="cs-mega-wrapper">
-                    <li class="menu-item-has-children">
-                      <a href="#">Trang</a>
-                      <ul>
-                        <li><a href='01_agency_home.html'>Agency</a></li>
-                        <li><a href='02_non_profit_home.html'>Non-Profit</a></li>
-                        <li><a href='03_seo_home.html'>SEO</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Trang</a>
-                      <ul>
-                        <li><a href='04_medical_home.html'>Medical</a></li>
-                        <li><a href='05_insurance_home.html'>Insurance</a></li>
-                        <li><a href='06_movers_home.html'>Movers</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Trang</a>
-                      <ul>
-                        <li><a href='07_creative_home.html'>Creative</a></li>
-                        <li><a href='08_portfolio_home.html'>Portfolio</a></li>
-                        <li><a href='09_photography_home.html'>Photograpry</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Trang</a>
-                      <ul>
-                        <li><a href='index.html'>Landing Page</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Thông Tin</a>
-                  <ul>
-                    <li><a href='about_1.html'>About Us V1</a></li>
-                    <li><a href='about_2.html'>About Us V2</a></li>
-                    <li><a href='service.html'>Service</a></li>
-                    <li><a href='faq.html'>FAQ Page</a></li>
-                    <li><a href='error.html'>404 Page</a></li>
-                    <li><a href='contact_1.html'>Contact V1</a></li>
-                    <li><a href='contact_2.html'>Contact V2</a></li>
-                    <li><a href='pricing.html'>Pricing Plan</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Portfolio</a>
-                  <ul>
-                    <li><a href='portfolio_1.html'>Portfolio 1</a></li>
-                    <li><a href='portfolio_2.html'>Portfolio 2</a></li>
-                    <li><a href='portfolio_details.html'>Portfolio Details</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Blog</a>
-                  <ul>
-                    <li><a href='blog_list_right_sidebar.html'>Blog right sidebar</a></li>
-                    <li><a href='blog_list_left_sidebar.html'>Blog left sidebar</a></li>
-                    <li><a href='blog_grid.html'>Blog grid view</a></li>
-                    <li><a href='blog_details_left_sidebar.html'>Blog Details Left Sidebar</a></li>
-                    <li><a href='blog_details_right_sidebar.html'>Blog details right sidebar</a></li>
-                    <li><a href='blog_details_no_sidebar.html'>Blog Details no Sidebar</a></li>
-                  </ul>
-                </li>
-                <li><a href='contact_1.html'>Contact</a></li>
+                <li class="nav-item"><a href="#main_logo" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item"><a href="#gioi_thieu_chung" class="nav-link">Thông Tin</a></li>
+                <li class="nav-item"><a href="#send_mail_form" class="nav-link">Nhận Tư Vấn</a></li>
+                <li class="nav-item"><a href="#cau_hoi" class="nav-link">Câu Hỏi</a></li>
               </ul>
             </div><!-- .cs-nav -->
           </div><!-- .cs-main__header__right -->
@@ -177,11 +118,11 @@
   <!-- End Counter -->
 
   <!-- Start Servide -->
-  <div class="cs-parallax cs-style8">
+  <div class="cs-parallax cs-style8" id="gioi_thieu_chung">
     <div class="cs-height__130 cs-height__lg__80"></div>
     <div class="container">
       <div class="cs-section__heading cs-style1 cs-top-bar text-center">
-        <h2 class="cs-section__title">GIỚI THIỆU CHUNG</h2>
+        <h2 class="cs-section__title" >GIỚI THIỆU CHUNG</h2>
         <div class="cs-height__25 cs-height__lg__15"></div>
         <div class="cs-section__subtitle">Quản trị kinh doanh là một trong những ngành học xương sống đóng vai trò quan trọn trong nền kinh tế, bởi nó có vai trò đào tạo ra những nhân lực then chốt trong nền kinh tế thị trường. Đào tạo cử nhân chuyên ngành Phân tích Kinh doanh có khả năng làm việc độp lập và sáng tạo; giải quyết các vấn đề và ra quyết định kinh doanh dựa trên phân tích dữ liệu trong môi trường quốc tế.</div>
       </div>
@@ -405,12 +346,47 @@
   </div>
   <div class="cs-height__130 cs-height__lg__80"></div>
   <!-- End About Section -->
+
+  <!-- Form Send Mail-->
+  <div class="d-flex justify-content-center"  id="send_mail_form">
+    <div class="col-lg-5 col-md-12 col-sm-12">
+      <div class="edu-platfrom-content" data-aos="fade-up" data-aos-anchor-placement="top-center">
+    
+        <div class="cs-section__heading cs-style1 cs-top-bar text-center">
+          <h2 class="cs-section__title" id="cau_hoi">Tư vấn ngành</h2>
+          <div class="cs-height__25 cs-height__lg__15"></div>
+          <div class="cs-section__subtitle">Điền thông tin của bạn để nhận được tư vấn.</div>
+        </div>
+      <div class="subscribe-inner-area">
+      <form class="newsletter-form" data-toggle="validator">
+        <div>
+          <input type="text" class="input-newsletter" placeholder="Địa chỉ email" name="email"
+              required autocomplete="off">
+        </div>
+        <div class="mt-2">
+          <input type="text" class="input-newsletter" placeholder="Số điện thoại" name="sdt"
+             required autocomplete="off">
+        </div>
+        <div class="mt-2">
+          <input type="text" class="input-newsletter" placeholder="Họ và tên" name="name"
+            required autocomplete="off">
+        </div>
+        <div class="d-flex justify-content-center">
+        <button type="submit" class="default-btn">Gửi ngay</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!-- End Form-->
+
   <!-- Start FAQ -->
   <div class="cs-parallax cs-style7">
     <div class="container">
       <div class="cs-height__130 cs-height__lg__80"></div>
       <div class="cs-section__heading cs-style1 cs-top-bar text-center">
-        <h2 class="cs-section__title">Câu Hỏi Thường Gặp!</h2>
+        <h2 class="cs-section__title" id="cau_hoi">Câu Hỏi Thường Gặp!</h2>
         <div class="cs-height__25 cs-height__lg__15"></div>
         <div class="cs-section__subtitle">Một số câu hỏi từ tân Sinh viên.</div>
       </div>
@@ -426,7 +402,7 @@
                     <span class="cs-accordian__toggle"><i class="fas fa-caret-down"></i></span>
                   </div>
                   <div class="cs-accordian-body">
-                    <p>Câu trả lời: ....</p>
+                    <p>Có giảng đường được trang bị những thiết bị điện tử hiện đại, tài liệu về chuyên ngành sâu rộng được bảo quản trong thư viện, không gian khuôn viên rộng lớn và tươi mát ...</p>
                   </div>
                 </div><!-- .cs-accordian -->
                 <div class="cs-accordian">
@@ -435,7 +411,7 @@
                     <span class="cs-accordian__toggle"><i class="fas fa-caret-down"></i></span>
                   </div>
                   <div class="cs-accordian-body">
-                    <p>Câu trả lời: ....</p>
+                    <p>Là quá trình xem xét và đánh giá khối tài sản dữ liệu mà một doanh nghiệp có được và có thể tùy ý sử dụng đồng thời tận dụng những tài nguyên đó để làm giàu cho doanh nghiệp</p>
                   </div>
                 </div><!-- .cs-accordian -->
                 <div class="cs-accordian">
@@ -444,7 +420,7 @@
                     <span class="cs-accordian__toggle"><i class="fas fa-caret-down"></i></span>
                   </div>
                   <div class="cs-accordian-body">
-                    <p>Câu trả lời: ....</p>
+                    <p>Giao dịch mua bán trong xã hội ngày nay ngày càng phức tạp, không còn đơn giản là "Tiền trao cháo múc". Để có thể mang lại doanh thu và lợi nhuận thì doanh nghiệp cần một con người có khả năng phân tích thị trường, giao dịch hay chính là một chuyên gia về Phân Tích Kinh Doanh để chắc chắn rằng không có sự đầu tư nào là lãng phí</p>
                   </div>
                 </div><!-- .cs-accordian -->
                 <div class="cs-accordian">
@@ -453,7 +429,7 @@
                     <span class="cs-accordian__toggle"><i class="fas fa-caret-down"></i></span>
                   </div>
                   <div class="cs-accordian-body">
-                    <p>Câu trả lời: ....</p>
+                    <p>Mức lương chính là giá trị mà bạn mang lại cho doanh nghiệp. Vì vậy kiến thức về Phân tích kinh doanh của bạn càng sâu sắc và chính xác thì bạn có yêu cầu được trả lương cao hơn. Quan trọng là bạn có thể nắm vững cùng vận dụng được bao nhiêu phần trăm kiến thức!</p>
                   </div>
                 </div><!-- .cs-accordian -->
                 <div class="cs-accordian">
@@ -462,7 +438,7 @@
                     <span class="cs-accordian__toggle"><i class="fas fa-caret-down"></i></span>
                   </div>
                   <div class="cs-accordian-body">
-                    <p>Câu trả lời: ....</p>
+                    <p>Các học phần liên quan không hề khó, nhưng khi đi vào những học phần chuyên ngành phân tích cần người học có khả năng Logic và dự đoán thị trường</p>
                   </div>
                 </div><!-- .cs-accordian -->
               </div><!-- .cs-accordians -->
@@ -587,145 +563,14 @@
   </div>
   <div class="cs-height__130 cs-height__lg__80"></div>
   <!-- End FAQ -->
- 
-  <!-- Start Events -->
-  <div class="cs-animated cs-style1">
-    <div class="cs-height__120 cs-height__lg__70"></div>
-    <div class="container">
-      <div class="cs-section__heading cs-style1 cs-top-bar text-center">
-        <h2 class="cs-section__title">Tin tức gần đây</h2>
-        <div class="cs-height__25 cs-height__lg__15"></div>
-        <div class="cs-section__subtitle">Thông tin liên quan đến Phân tích Kinh doanh.</div>
-      </div>
-      <div class="cs-height__70 cs-height__lg__50"></div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="cs-post cs-style1">
-            <a href="#" class="cs-post__thumb">
-              <div class="cs-post__thumb__in cs-bg" data-src="assets/img/seo/post1.jpg"></div>
-            </a>
-            <div class="cs-post__date">20 <span>Tháng 08</span></div>
-            <div class="cs-post__info">
-              <div class="cs-post__meta cs-style1">
-                <a href="#" class="cs-post__author"><i class="fas fa-user-alt"></i>Nguyễn Mạnh Quang</a>
-                <div class="cs-post__view"><i class="fas fa-eye"></i>15</div>
-                <a href="#" class="rt-post__comment"><i class="fas fa-comments"></i>30</a>
-              </div>
-              <h2 class="cs-post__title mb0"><a href="#">Làm sao để thương mại kỹ năng phân tích và dự đoán xu hướng phát triển tương lai?</a></h2>
-            </div>
-          </div>
-          <div class="cs-height__30 cs-height__lg__30"></div>
-        </div><!-- .col -->
-        <div class="col-lg-6">
-          <div class="cs-post cs-style1">
-            <a href="#" class="cs-post__thumb">
-              <div class="cs-post__thumb__in cs-bg" data-src="assets/img/seo/post2.jpg"></div>
-            </a>
-            <div class="cs-post__date cs-green">15 <span>Tháng 08</span></div>
-            <div class="cs-post__info">
-              <div class="cs-post__meta cs-style1">
-              <a href="#" class="cs-post__author"><i class="fas fa-user-alt"></i>Nguyễn Mạnh Quang</a>
-                <div class="cs-post__view"><i class="fas fa-eye"></i>22</div>
-                <a href="#" class="rt-post__comment"><i class="fas fa-comments"></i>12</a>
-              </div>
-              <h2 class="cs-post__title mb0"><a href="#">Xếp hạng những kỹ thuật phân tích trong kinh doanh.</a></h2>
-            </div>
-          </div>
-          <div class="cs-height__30 cs-height__lg__30"></div>
-        </div><!-- .col -->
-      </div>
-    </div>
-    <div class="cs-height__100 cs-height__lg__40"></div>
-    <div class="cs-animated__shape cs-position1">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="451px" height="451px">
-        <path fill-rule="evenodd" fill="rgb(243, 253, 248)" d="M225.500,-0.000 C350.040,-0.000 451.000,100.960 451.000,225.500 C451.000,350.040 350.040,451.000 225.500,451.000 C100.960,451.000 -0.000,350.040 -0.000,225.500 C-0.000,100.960 100.960,-0.000 225.500,-0.000 Z" />
-      </svg>
-    </div>
-    <div class="cs-animated__shape cs-position2">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="559px" height="557px">
-        <path fill-rule="evenodd" stroke="rgb(226, 239, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M252.676,4.215 L549.769,229.543 C556.721,234.816 558.083,244.726 552.809,251.678 L327.461,548.744 C322.187,555.696 312.276,557.057 305.324,551.784 L8.231,326.456 C1.279,321.183 -0.083,311.273 5.191,304.321 L230.539,7.254 C235.813,0.303 245.724,-1.058 252.676,4.215 Z" />
-        <path fill-rule="evenodd" fill="rgb(244, 249, 255)" d="M267.944,92.546 L460.644,238.937 C469.440,245.619 471.153,258.166 464.472,266.961 L318.080,459.662 C311.399,468.457 298.852,470.171 290.056,463.489 L97.356,317.098 C88.560,310.416 86.847,297.869 93.528,289.074 L239.920,96.373 C246.602,87.578 259.148,85.864 267.944,92.546 Z" />
-      </svg>
-    </div>
-  </div>
-  <!-- End Events -->
 
-  <!-- Start CTA -->
-  <div class="cs-dark__bg">
-    <div class="container">
-      <div class="cs-cta cs-style3 cs-color1">
-        <div class="cs-cta__img"><img src="assets/img/insurance/cta-img.svg" alt=""></div>
-        <div class="cs-cta__text">
-          <h2 class="cs-cta__title">Liên hệ:</h2>
-          <ul>
-            <li><div class="cs-cta__subtitle">Điện thoại: 0866.033.423</div></li>
-            <li><div class="cs-cta__subtitle"><u>www.is.tnu.edu.vn</u></div></li>
-            <li><div class="cs-cta__subtitle">FACEBOOK</div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End CTA -->
-
-  
   <!-- Footer Section -->
   <footer class="cs-footer cs-style1 cs-color1 cs-bg" data-src="assets/img/insurance/footer-bg.jpg">
     <div class="cs-height__110 cs-height__lg__70"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="cs-footer__item">
-            <h2 class="cs-widget__title">Về Chúng Tôi</h2>
-            <div class="cs-footer__widget__text">Xây dựng tương lai vững mạnh với Phân Tích Kinh Doanh.</div>
-            <div class="cs-height__15 cs-height__lg__15"></div>
-            <div class="cs-social__btns cs-style1">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-            </div>
-          </div>
-        </div><!-- .col -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="cs-footer__item widget_nav_menu">
-            <h2 class="cs-widget__title">Hỗ Trợ</h2>
-            <ul class="menu">
-              <li><a href="#">Quản lý con người</a></li>
-              <li><a href="#">Phân tích thị trường</a></li>
-              <li><a href="#">Kinh doanh</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Bảo hiểm</a></li>
-            </ul>
-          </div>
-        </div><!-- .col -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="cs-footer__item widget_nav_menu">
-            <h2 class="cs-widget__title">Bổ Sung</h2>
-            <ul class="menu">
-              <li><a href="#">Tài liệu</a></li>
-              <li><a href="#">Sản phẩm</a></li>
-              <li><a href="#">Vấn đề</a></li>
-              <li><a href="#">Điều khoản & dịch vụ</a></li>
-              <li><a href="#">Quy định</a></li>
-            </ul>
-          </div>
-        </div><!-- .col -->
-        <div class="col-lg-3 col-sm-6">
-          <div class="cs-footer__item cs-address__widgert">
-            <h2 class="cs-widget__title">Thông Tin Liên Hệ</h2>
-            <ul>
-              <li><i class="fas fa-map-marker-alt"></i>Thái Nguyên, Thành phố Thái Nguyên</li>
-              <li><i class="fas fa-envelope"></i>email</li>
-              <li><i class="fas fa-headset"></i>0866.003.423</li>
-            </ul>
-          </div>
-        </div><!-- .col -->
-      </div>
-      <!-- <div class="cs-height__85 cs-height__lg__40"></div> -->
-    </div>
     <div class="cs-copyright text-center">
-      <div class="container">© 2024 - Đại Học Thái Nguyên Khoa Quốc Tế.</div>
+      <div class="container">   <p>© Copyright 2024 | <a href="https://is.tnu.edu.vn/" target="_blank">Khoa Quốc Tế</a> | Đại học Thái
+        Nguyên
+    </p></div>
     </div>
     <div class="cs-parallax__shape cs-position1">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="13px">
@@ -776,6 +621,7 @@
   <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/animated-headline.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sendmail.js"></script>
 </body>
 
 <!-- Mirrored from lala-html.netlify.app/05_insurance_home by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 May 2024 07:33:13 GMT -->
