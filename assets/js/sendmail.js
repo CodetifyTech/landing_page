@@ -1,7 +1,6 @@
 let form = document.getElementById("send_mail_form");
 let form_2 = document.getElementById("send_mail_form_footer");
 let btnSubmit = form.querySelector("[type=submit]");
-const nganhIndex = 7;
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
