@@ -589,14 +589,15 @@
         e.preventDefault();
 
         let formData = new FormData(this);
-        sendData(formData.get("name"), formData.get("email"), formData.get("sdt"));
+        sendData(formData.get("name"), formData.get("email"), formData.get("sdt"), formData.get("address"));
     });
 
-    const sendData = async (name, email, sdt) => {
+    const sendData = async (name, email, sdt, address) => {
         const formdata = new FormData();
         formdata.append("name", name);
         formdata.append("email", email);
         formdata.append("sdt", sdt);
+        formdata.append("address", address);
         formdata.append("major", nganhIndex);
 
         const requestOptions = {
