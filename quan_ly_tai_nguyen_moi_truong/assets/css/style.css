@@ -8576,6 +8576,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .service-card-inner {
   text-align: center;
+  height:300px;
   border-radius: 50px;
   padding: 45px 40px 43px 40px;
   background-color: var(--theme-color);
