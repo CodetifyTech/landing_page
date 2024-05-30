@@ -163,3 +163,6 @@ span.ladipage-animated-headline.clip {
     justify-content: center;
     align-items: center;
 }
+.gradient-background {
+  background: linear-gradient(to right, #00f, #f00);
+}

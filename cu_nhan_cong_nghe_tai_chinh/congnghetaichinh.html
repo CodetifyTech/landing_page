@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Laralink">
   <!-- Site Title -->
-  <title>Landing page Công nghệ tài chính</title>
+  <title> Cử nhân ngành Công nghệ tài chính</title>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -49,9 +49,18 @@
               <div style="text-align: center;">KHOA QUỐC TẾ</div>
             </div>
           </div>
-
+          
           <div class="cs-main__header__right">
-
+            <div class="cs-nav">
+              <ul class="cs-nav__list">
+                <li><a href="#home_banner">Trang chủ</a></li>
+                <li><a href="#tong_quan">Tổng quan</a></li>
+                <li><a href="#vi_tri_viec_lam">Vị trí việc làm</a></li>
+                <li><a href="#hoc_phan_chinh">Học phần chính</a></li>
+                <li><a href="#ky_nang">Kỹ năng</a></li>
+                <li><a href="#diem_noi_bat">Điểm nổi bật</a></li>
+              </ul>
+            </div><!-- .cs-nav -->
           </div><!-- .cs-main__header__right -->
         </div>
       </div>
@@ -64,20 +73,81 @@
     <div class="container">
       <div class="cs-hero__text">
         <h1 class="cs-hero__title">
-          <span class="uppercase italic-text">CỬ NHÂN</span>
+          <span class="bold-text">Cử nhân</span>
         </h1>
         <h1 class="cs-hero__title">
           <span class="bold-text">Công nghệ tài chính</span>
         </h1>
-        <div class="cs-hero__subtitle"><i class="fa-solid fa-location-dot"></i> Phường Tân Thịnh, TPTN, TN</div>
+        <div>
+          Chúng tôi sẵn sàng mang đến cho bạn những ý tưởng độc đáo<br /> và tiên phong trong lĩnh vực công nghệ tài chính. Hãy đến với <br />chúng tôi và thảo
+          luận về dự án kinh doanh mơ ước của bạn.<br />nơi bạn có thể chuyển hóa những ý tưởng sáng tạo thành hiện<br />thực và tạo nên những đột phá mới cho ngành tài chính.
+        </div>
+        <div class="cs-height__40 cs-height__lg__50"></div>
         <div class="cs-btns cs-style1">
-          <a href="#contact" class="cs-btn cs-style1 cs-color1 cs-primary__font">
-            <span class="cs-btn__text">Liện hệ</span>
+          <a href="#contact" class="cs-btn cs-style1 cs-color1 cs-primary__font cs-hover-border">
+            <span class="cs-btn__text">Liên hệ</span>
           </a>
-          <a href="https://is.tnu.edu.vn/xet-tuyen-hoc-ba-truc-tuyen/"
-            class="cs-btn cs-style1 cs-color1 cs-primary__font">
-            <span class="cs-btn__text"> Đăng ký ngay</span>
+          
+          <style>
+            .cs-hover-border {
+              position: relative;
+              text-decoration: none;
+              display: inline-block; 
+              padding: 10px 20px; 
+            }
+          
+            .cs-hover-border::after {
+              content: '';
+              position: absolute;
+              top: -2px; 
+              left: -2px; 
+              width: calc(100% + 4px); 
+              height: calc(100% + 4px); 
+              border: 2px solid #5e2ced;
+              border-radius: 10px; 
+              box-sizing: border-box; 
+              opacity: 0;
+              transition: opacity 0.3s;
+              pointer-events: none; 
+            }
+          
+            .cs-hover-border:hover::after {
+              opacity: 1; 
+            }
+          </style>
+          <a href="https://is.tnu.edu.vn/xet-tuyen-hoc-ba-truc-tuyen/" class="cs-btn cs-style1 cs-color2 cs-primary__font cs-smooth__move cs-hover-border">
+            <span class="cs-btn__text">Đăng ký ngay</span>
           </a>
+          
+          <style>
+            .cs-hover-border {
+              position: relative;
+              text-decoration: none;
+              display: inline-block; 
+              padding: 10px 20px; 
+              border-radius:3px; 
+            }
+          
+            .cs-hover-border::before {
+              content: '';
+              position: absolute;
+              top: -2px; 
+              left: -2px; 
+              width: calc(100% + 4px); 
+              height: calc(100% + 4px); 
+              border: 2px solid #5e2ced;
+              border-radius: 10px; 
+              transition: opacity 0.3s;
+              box-sizing: border-box; 
+              opacity: 1; 
+              pointer-events: none; 
+            }
+          
+            .cs-hover-border:hover::before {
+              opacity: 0;
+            }
+          </style>
+          
         </div>
       </div>
     </div>
@@ -130,7 +200,7 @@
 
   <!-- Start About -->
   <div class="cs-height__120 cs-height__lg__70"></div>
-  <div class="cs-parallax cs-style1 animated_fade">
+  <div class="cs-parallax cs-style1 animated_fade gradient-background">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -147,7 +217,7 @@
             <div class="cs-vertical__middle__in">
               <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
               <div class="cs-text__box cs-style1">
-                <h2 class="cs-text__box__title">Giới thiệu chung</h2>
+                <h2 class="cs-text__box__title" id="tong_quan">Giới thiệu chung</h2>
                 <div class="cs-height__25 cs-height__lg__25"></div>
                 <div class="cs-text__box__text" style="text-align: justify;">Ngành Công nghệ tài chính đào tạo sinh viên
                   trở thành nhà quản trị/ quản lý hiểu biết và áp dụng công nghệ mới (AI, Big data, Blockchain, Deep
@@ -211,7 +281,7 @@
               <div class="cs-vertical__middle__in">
                 <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
                 <div class="cs-text__box cs-style1">
-                  <h2 class="cs-text__box__title">Các vị trí làm việc sau khi tốt nghiệp</h2>
+                  <h2 class="cs-text__box__title" id="vi_tri_viec_lam">Các vị trí làm việc sau khi tốt nghiệp</h2>
                   <div class="cs-height__25 cs-height__lg__25"></div>
                   <div class="cs-text__box__text" style="text-align: justify;">
                     Sau khi tốt nghiệp, sinh viên tốt nghiệp ngành Công nghệ tài chính có thể làm việc tại các vị trí
@@ -261,7 +331,7 @@
                   <div class="cs-vertical__middle__in">
                     <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
                     <div class="cs-text__box cs-style1">
-                      <h2 class="cs-text__box__title">Các học phần chính</h2>
+                      <h2 class="cs-text__box__title" id="hoc_phan_chinh">Các học phần chính</h2>
                     </div>
                     <div class="cs-height__30 cs-height__lg__30"></div>
                     <ul class="cs-list cs-style1 cs-mp0">
@@ -347,46 +417,94 @@
   </div>
   <!-- End About Section -->
 
-  <!-- About Section -->
-  <div class="cs-height__130 cs-height__lg__70"></div>
-  <div class="container animated_fade">
-    <div class="row cs-row__reverse__lg">
-      <div class="col-lg-6">
-        <div class="cs-vertical__middle">
-          <div class="cs-vertical__middle__in">
-            <div class="cs-text__box cs-style1">
-              <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
-              <h2 class="cs-text__box__title">Lý do nên học ngành này? </h2>
-              <div class="cs-height__25 cs-height__lg__25"></div>
-              <div class="cs-text__box__text">
-                <p style="text-align: justify;">Các doanh nghiệp luôn muốn tận dụng những cơ hội và đối mặt với những
-                  thách thức trong hoạt động kinh doanh quốc tế. Các nhà tuyển dụng hiện nay thường yêu cầu ứng viên có
-                  bằng cử nhân hoặc cao hơn về Kinh doanh, Quản trị kinh doanh hoặc các chuyên ngành liên quan. Ngoài
-                  ra, ứng viên cần cókhả năng sử dụng thành thạo, các phần mềm văn phòng, khả năng giao tiếp và đàm phán
-                  thông qua tiếng Anh hoặc những ngôn ngữ khác, kỹ năng làm việc nhóm, kỹ năng giải quyết vấn đề và lập
-                  kế hoạch.<br>Với sự đa dạng trong cấu trức đào tạo, sinh viên ngành Kinh doanh Quốc tế có cơ hội rộng
-                  mở ở hầu hết các lĩnh vực và đạt được thành công trong sự nghiệp với mức lương thu nhập cao nếu tích
-                  lũy được kinh nghệm trong nghề. </p>
+ 
+  <!-- Start Servide -->
+  <div>
+    <div class="cs-height__120 cs-height__lg__70"></div>
+    <div class="container animated_fade"">
+      <div class="cs-section__heading cs-style1 text-center">
+        <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
+        <h2 class="cs-section__title">Lý Do Nên Chọn Ngành Học Này</h2>
+        <div class="cs-height__25 cs-height__lg__15"></div>
+        <div class="cs-section__subtitle">Các doanh nghiệp muốn tận dụng cơ hội và đối mặt với thách thức trong kinh doanh quốc tế thường yêu cầu ứng viên có bằng cử nhân hoặc cao hơn về Kinh doanh, Quản trị kinh doanh, hoặc các chuyên ngành liên quan. Ứng viên cần sử dụng thành thạo các phần mềm văn phòng, giao tiếp và đàm phán tốt bằng tiếng Anh hoặc ngôn ngữ khác, có kỹ năng làm việc nhóm, giải quyết vấn đề và lập kế hoạch. Sinh viên ngành Kinh doanh Quốc tế có cơ hội rộng mở trong nhiều lĩnh vực và có thể đạt được thành công với thu nhập cao khi có kinh nghiệm.</div>
+      </div>
+      <div class="cs-height__70 cs-height__lg__50"></div>
+      <div class="row">
+        <div class="col-xl-3 col-sm-6">
+          <a href="#" class="cs-icon__box cs-style1 text-center cs-hobble">
+            <div class="cs-icon__box__in cs-hover__layer4">
+              <div class="cs-hover__layer3">
+                <div class="cs-icon__box__icon cs-center cs-hover__layer3">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="512" height="512" fill="#5E2CED">
+                    <path d="M139.327,118.114L96.901,75.688c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213l42.426,42.426    c5.857,5.858,15.356,5.858,21.213,0C145.185,133.469,145.185,123.972,139.327,118.114z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                    <path d="M76,241H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h61c8.284,0,15-6.716,15-15S84.284,241,76,241z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                    <path d="M497,241h-61c-8.284,0-15,6.716-15,15s6.716,15,15,15h61c8.284,0,15-6.716,15-15S505.284,241,497,241z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                    <path d="M436.312,75.688c-5.857-5.858-15.355-5.858-21.213,0l-42.426,42.426c-5.858,5.858-5.858,15.355,0,21.213    c5.857,5.858,15.356,5.858,21.213,0l42.426-42.426C442.17,91.043,442.17,81.546,436.312,75.688z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                    <path d="M256,0c-8.284,0-15,6.716-15,15v61c0,8.284,6.716,15,15,15s15-6.716,15-15V15C271,6.716,264.284,0,256,0z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                    <path d="M339.867,150.205c-32.508-25.801-74.844-35.074-116.148-25.445c-48.028,11.198-86.69,49.285-98.495,97.031    c-11.843,47.898,1.711,96.721,36.258,130.601C173.886,364.556,181,382.921,181,402.777V406c0,13.296,5.801,25.26,15,33.505V467    c0,24.813,20.187,45,45,45h30c24.813,0,45-20.187,45-45v-27.495c9.199-8.245,15-20.208,15-33.505v-3.282    c0-19.545,7.495-38.266,20.563-51.361C376.994,325.87,391,292.005,391,256C391,214.557,372.363,175.996,339.867,150.205z M286,467    c0,8.271-6.729,15-15,15h-30c-8.271,0-15-6.729-15-15v-16h60V467z M330.326,330.166C311.689,348.843,301,375.288,301,402.718V406    c0,8.271-6.729,15-15,15h-15v-91.898c25.849-6.678,45-30.195,45-58.102c0-8.284-6.716-15-15-15s-15,6.716-15,15    c0,16.542-13.458,30-30,30s-30-13.458-30-30c0-8.284-6.716-15-15-15s-15,6.716-15,15c0,27.906,19.151,51.424,45,58.102V421h-15    c-8.271,0-15-6.729-15-15v-3.223c0-27.863-10.393-54.035-28.513-71.805c-26.889-26.371-37.409-64.494-28.14-101.981    c9.125-36.908,39.029-66.353,76.184-75.015c8.414-1.962,16.874-2.926,25.235-2.926c23.774,0,46.738,7.801,65.451,22.653    C346.5,193.77,361,223.766,361,256C361,284.004,350.106,310.343,330.326,330.166z" data-original="#000000" class="active-path" data-old_color="#000000" fill="inherit"/>
+                  </svg>
+                </div>
+                <h2 class="cs-icon__box__title">Yêu cầu tuyển dụng</h2>
               </div>
             </div>
-            <div class="cs-height__30 cs-height__lg__30"></div>
-          </div>
-        </div>
-      </div><!-- .col -->
-      <div class="col-lg-6">
-        <div class="cs-right__full__width">
-          <div class="cs-box cs-size3 cs-align__left cs-space85">
-            <div>
-              <img src="assets/img/medical/why01.jpg" alt=""
-                style="width:550px; height: 450px; border-radius: 10px;object-fit: cover;">
+          </a>
+          <div class="cs-height__30 cs-height__lg__30"></div>
+        </div><!-- .col -->
+        <div class="col-xl-3 col-sm-6">
+          <a href="#" class="cs-icon__box cs-style1 text-center cs-hobble">
+            <div class="cs-icon__box__in cs-hover__layer4">
+              <div class="cs-hover__layer3">
+                <div class="cs-icon__box__icon cs-center cs-hover__layer3">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="512" height="512">
+                    <path d="M499.904,456.607H12.096C5.415,456.607,0,462.022,0,468.703c0,6.679,5.415,12.096,12.096,12.096h487.808    c6.679,0,12.096-5.417,12.096-12.096C512,462.023,506.585,456.607,499.904,456.607z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                    <path d="M468.37,88.305h-84.948c-6.679,0-12.096,5.417-12.096,12.096v82.24h-60.757V43.297c0-6.679-5.417-12.096-12.096-12.096    h-84.95c-6.679,0-12.096,5.417-12.096,12.096v228.882h-60.757V169.36c0-6.681-5.417-12.096-12.096-12.096H43.626    c-6.681,0-12.096,5.415-12.096,12.096v231.563c0,6.681,5.417,12.096,12.096,12.096h84.948h84.948h84.95h84.949h84.948    c6.681,0,12.096-5.417,12.096-12.096V100.401C480.466,93.722,475.051,88.305,468.37,88.305z M116.479,388.827H55.722V181.456    h60.757V388.827z M201.429,388.827h-60.757v-92.456h60.757V388.827z M286.378,194.737v194.09H225.62V55.393h60.758V194.737z     M371.328,388.827h-60.757V206.833h60.757V388.827z M456.276,388.827H395.52v-194.09v-82.24h60.757V388.827z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                  </svg>
+                </div>
+                <h2 class="cs-icon__box__title">Khả năng và kỹ năng cần thiết</h2>
+              </div>
             </div>
-
-          </div>
-        </div>
-      </div><!-- .col -->
+          </a>
+          <div class="cs-height__30 cs-height__lg__30"></div>
+        </div><!-- .col -->
+        <div class="col-xl-3 col-sm-6">
+          <a href="#" class="cs-icon__box cs-style1 text-center cs-hobble">
+            <div class="cs-icon__box__in cs-hover__layer4">
+              <div class="cs-hover__layer3">
+                <div class="cs-icon__box__icon cs-center cs-hover__layer3">
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512">
+                    <path d="m23 50-21-11 3 7-3 4 3 4-3 7z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                    <path d="m47 8c5.52283 0 10 4.47711 10 10 0 5.52283-4.47717 10-10 10-5.18524 0-9.44763-3.94678-9.94952-9h-5c.51684 7.8158 7.0028 14 14.94952 14 8.2843 0 15-6.71576 15-15 0-8.2843-6.7157-15-15-15-7.94672 0-14.43268 6.18414-14.94952 14h5c.50189-5.05328 4.76428-9 9.94952-9z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                    <path d="m44.29297 15.70703 1.41406-1.41406 3.70703 3.70703-3.70703 3.70703-1.41406-1.41406 1.29297-1.29297h-3.48517c.46338 2.28217 2.48035 4 4.89923 4 2.76141 0 5-2.23859 5-5s-2.23859-5-5-5c-2.41888 0-4.43585 1.71783-4.89923 4h3.48517z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                    <path d="m42 18c0-.34253.03516-.67682.10077-1h-5.05029c-.03266.32898-.05048.66241-.05048 1s.01782.67102.05048 1h5.05029c-.06561-.32318-.10077-.65747-.10077-1z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                    <path d="m24.29297 21.70703 2.70703-2.70703h5.05048c-.02198-.33203-.05048-.66241-.05048-1s.0285-.66797.05048-1h-5.05048l-2.70703-2.70703-1.41406 1.41406 1.29297 1.29297h-4.08594c-5.79004 0-10.5 4.71045-10.5 10.5s4.70996 10.5 10.5 10.5h11.08594l2.70703 2.70703 1.41406-1.41406-1.29297-1.29297h20.5c3.03223 0 5.5 2.46729 5.5 5.5s-2.46777 5.5-5.5 5.5h-10.5l-2.70703-2.70703-1.41406 1.41406 1.29297 1.29297h-16.17188v2h16.17188l-1.29297 1.29297 1.41406 1.41406 2.70703-2.70703h10.5c4.13574 0 7.5-3.36426 7.5-7.5s-3.36426-7.5-7.5-7.5h-20.5l1.29297-1.29297-1.41406-1.41406-2.70703 2.70703h-11.08594c-4.68652 0-8.5-3.81299-8.5-8.5s3.81348-8.5 8.5-8.5h4.08594l-1.29297 1.29297z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                  </svg>
+                </div>
+                <h2 class="cs-icon__box__title">Cơ hội nghề nghiệp</h2>
+              </div>
+            </div>
+          </a>
+          <div class="cs-height__30 cs-height__lg__30"></div>
+        </div><!-- .col -->
+        <div class="col-xl-3 col-sm-6">
+          <a href="#" class="cs-icon__box cs-style1 text-center cs-hobble">
+            <div class="cs-icon__box__in cs-hover__layer4">
+              <div class="cs-hover__layer3">
+                <div class="cs-icon__box__icon cs-center cs-hover__layer3">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="512" height="512" class="">
+                    <path d="M507.448,108.594c-2.844-2-6.49-2.49-9.76-1.281l-86.958,31.625c-10.781,3.917-19.365,11.813-24.167,22.229    c-0.9,1.953-1.491,3.982-2.083,6.008c-14.932-4.245-42.682-13.111-70.26-27.32c-41.673-21.473-73.51-10.867-100.816,9.961    c-13.836,0.272-32.906,1.908-51.652,3.56c-11.958,1.055-23.259,2.026-32.423,2.585c-0.225-5.504-1.513-10.966-3.889-16.126    c-4.802-10.417-13.385-18.313-24.167-22.229L14.313,85.979c-3.26-1.198-6.927-0.708-9.76,1.281C1.698,89.261,0,92.521,0,96    v213.333C0,315.229,4.771,320,10.667,320h31.156c13.251,0,25.579-6.25,33.548-16.342c4.245,3.228,9.273,7.008,14.546,10.967    c12.448,9.365,26.073,19.583,32.052,24.594c39.719,33.25,87.469,69.156,96.979,75.406c8.885,5.833,24.885,12.042,37.052,12.042    c4.76,0,16.75,0,25.167-7.115c8.677,3.406,18.031,3.24,26.729-0.594c8.677-3.823,15.698-11.031,19.781-19.792    c8.333,1.708,17.906,0.458,26.583-3.896c8.135-4.073,14.125-10.24,17.333-17.448c7.708,0.708,15.938-1.802,23.302-7.438    c10.522-8.043,15.34-19.921,13.977-31.639l27.057-14.969c7.924,10.741,20.518,17.556,34.247,17.556h31.156    c5.896,0,10.667-4.771,10.667-10.667V117.334C512,113.854,510.302,110.594,507.448,108.594z M61.802,284.823    c-3.104,8.281-11.135,13.844-19.979,13.844h-20.49V111.229l72.646,26.417c5.396,1.969,9.688,5.917,12.083,11.125    c2.406,5.208,2.615,11.042,0.604,16.406L61.802,284.823z M381.948,353.438c-3.615,2.771-8.677,4.313-10.927,2.063    c-0.115-0.115-0.293-0.104-0.411-0.214c-0.204-0.189-0.305-0.444-0.526-0.62c-7.625-6.021-41.792-40.979-62.906-63    c-4.073-4.26-10.833-4.417-15.073-0.323c-4.26,4.073-4.406,10.823-0.323,15.073c4.956,5.173,44.74,46.608,60.663,61.099    c-1.189,4.684-5.531,7.576-7.736,8.682c-6.833,3.427-13.958,2.854-16.625,0.375c-0.079-0.074-0.197-0.07-0.279-0.142    c-0.13-0.116-0.188-0.279-0.326-0.389c-12.792-10.219-44.885-44.323-52.146-52.219c-3.99-4.344-10.729-4.615-15.073-0.635    c-4.333,3.99-4.625,10.74-0.635,15.073c0.35,0.379,31.802,34.306,49.467,50.065c-1.736,4.988-5.273,9.119-9.811,11.122    c-3.349,1.488-8.587,2.251-14.572-2.172c-15.318-12.988-46.059-45.711-52.105-52.182c-4.01-4.313-10.781-4.531-15.073-0.51    c-4.302,4.021-4.531,10.771-0.51,15.073c7.168,7.672,28.355,30.128,44.461,45.333c-1.799,0.219-3.688,0.344-5.482,0.344    c-7.063,0-19.198-4.51-25.333-8.542c-7.479-4.917-54.438-39.958-94.99-73.917c-6.135-5.146-20.135-15.677-32.948-25.302    c-6.867-5.155-13.194-9.908-17.857-13.495l39.938-106.516c10.367-0.453,24.188-1.648,38.815-2.938    c8.273-0.729,16.555-1.44,24.469-2.056c-12.164,12.487-30.249,34.852-27.865,55.816c1.094,9.542,6.313,17.49,15.115,22.99    c17.427,10.906,49.688,1.76,65.229-17.354c10.031-1.448,16.813-4.01,24.208-7.677c12.5,11.75,29.26,25.563,46.865,40.073    c30.646,25.25,65.385,53.875,74.573,69.927C391.333,345.271,384.24,351.688,381.948,353.438z M400.247,319.134    c-14.212-19.012-45.02-44.449-75.039-69.186c-20.01-16.49-38.906-32.063-51-44.156c-3.333-3.313-8.448-4.063-12.573-1.865    c-10.865,5.823-15.76,8.229-28.031,9.458c-3.271,0.333-6.208,2.146-7.958,4.927c-8.365,13.271-31.615,19.583-38.99,14.979    c-4.188-2.625-5-5.292-5.229-7.323c-1.031-9.073,8.156-24.781,23.396-40.031c37.74-37.74,64.719-45.125,99.625-27.125    c33.164,17.099,65.895,26.767,79.635,30.419c0.397,1.598,0.685,3.212,1.271,4.779l41.417,110.451L400.247,319.134z M490.667,320    h-20.49c-8.844,0-16.875-5.563-19.979-13.844l-44.865-119.635c-2.01-5.375-1.802-11.208,0.604-16.417    c2.396-5.208,6.688-9.156,12.083-11.125l72.646-26.417V320z" data-original="#000000" class="active-path" fill="inherit" data-old_color="#000000" />
+                  </svg>
+                </div>
+                <h2 class="cs-icon__box__title">Đào tạo và phát triển</h2>
+              </div>
+            </div>
+          </a>
+          <div class="cs-height__30 cs-height__lg__30"></div>
+        </div><!-- .col -->
+      </div>
     </div>
+  
   </div>
-  <!-- End About Section -->
+  <!-- End Service -->
 
   <!-- Start Service -->
   <div class="cs-height__120 cs-height__lg__70"></div>
@@ -406,7 +524,7 @@
           <div class="cs-vertical__middle">
             <div class="cs-vertical__middle__in">
               <div class="cs-text__box cs-style1">
-                <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
+                <div class="cs-section__subtitle" id="ky_nang">Cử nhân Công nghệ tài chính</div>
                 <h2 class="cs-text__box__title">Các kỹ năng chính</h2>
                 <div class="cs-height__25 cs-height__lg__25"></div>
                 <ul class="cs-list cs-style2 cs-mp0">
@@ -464,10 +582,10 @@
     <div class="container1">
       <div class="cs-height__140 cs-height__lg__70"></div>
       <div class="cs-section__heading cs-style1 text-center">
-        <div class="cs-section__subtitle">Cử nhân Công nghệ tài chính</div>
+        <div class="cs-section__subtitle" id="diem_noi_bat">Cử nhân Công nghệ tài chính</div>
         <h2 class="cs-section__title">Điểm nổi bật</h2>
         <div class="cs-height__25 cs-height__lg__15"></div>
-        <div class="cs-section__subtitle">Những điểm nổi bật của các sinh viên chuyên ngành Kinh doanh - Quốc tế.</div>
+        <div class="cs-section__subtitle">Những điểm nổi bật của các sinh viên chuyên ngành Công nghệ tài chính.</div>
       </div>
       <div class="cs-height__30 cs-height__lg__50"></div>
       <div class="row">
