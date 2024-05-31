@@ -1236,6 +1236,7 @@ hr {
 4. Button
 ----------------------------------------------------------------*/
 .cs-btns.cs-style1 {
+  padding-bottom: 75px;
   display: flex;
   align-items: center; }
   .cs-btns.cs-style1 .cs-btn:not(:last-child) {
