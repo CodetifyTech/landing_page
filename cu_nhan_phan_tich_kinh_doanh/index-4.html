@@ -36,8 +36,7 @@
       <div class="container">
         <div class="cs-main__header__in">
           <div class="cs-main__header__left">
-            <a class='cs-site__branding' href='index.html'><img src="assets/img/insurance/logo.svg" alt=""
-                id="main_logo"></a>
+            <a class='cs-site__branding'><img src="assets/img/insurance/logo.svg" alt="" id="main_logo"></a>
           </div>
           <div class="cs-main__header__right">
             <div class="cs-nav">
@@ -152,7 +151,7 @@
       </div>
       <div class="cs-height__70 cs-height__lg__50"></div>
       <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="cs-icon__box cs-style6">
             <div class="cs-icon__box__icon">
               <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +185,7 @@
           </div>
           <div class="cs-height__70 cs-height__lg__30"></div>
         </div><!-- .col -->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="cs-icon__box cs-style6">
             <div class="cs-icon__box__icon">
               <svg width="436" height="512" viewBox="0 0 436 512" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +222,7 @@
           </div>
           <div class="cs-height__70 cs-height__lg__30"></div>
         </div><!-- .col -->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="cs-icon__box cs-style6">
             <div class="cs-icon__box__icon">
               <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +242,7 @@
           </div>
           <div class="cs-height__70 cs-height__lg__30"></div>
         </div><!-- .col -->
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="cs-icon__box cs-style6">
             <div class="cs-icon__box__icon">
               <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -414,12 +413,12 @@
         <div class="col-lg-5 col-md-12 col-sm-12">
           <div class="edu-platfrom-content" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div class="cs-section__heading cs-style1 cs-top-bar text-center">
-              <h2 class="cs-section__title" >Tư vấn ngành</h2>
+              <h2 class="cs-section__title">Tư vấn ngành</h2>
               <div class="cs-height__25 cs-height__lg__15"></div>
               <div class="cs-section__subtitle">Điền thông tin của bạn để nhận được tư vấn.</div>
             </div>
             <div class="subscribe-inner-area">
-              <form class="newsletter-form" data-toggle="validator" id="send_mail_form_footer">
+              <form class="newsletter-form" data-toggle="validator" id="send_mail_form">
                 <div class="mt-2">
                   <input type="text" class="input-newsletter" placeholder="Địa chỉ email" name="email" required
                     autocomplete="off">
@@ -432,9 +431,12 @@
                   <input type="text" class="input-newsletter" placeholder="Họ và tên" name="name" required
                     autocomplete="off">
                 </div>
-                <input type="hidden" name="address" value="no address" />
+                <div class="mt-2">
+                  <input type="text" class="input-newsletter" placeholder="Địa chỉ" name="address" required
+                    autocomplete="off">
+                </div>
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="default-btn">Gửi ngay</button>
+                  <button type="submit" class="default-btn">Nhận tư vấn</button>
                 </div>
               </form>
             </div>
@@ -887,7 +889,6 @@
   <div id="cs-scrollup"><i class="fas fa-chevron-up"></i></div>
 
   <!-- Script -->
-  <script src="assets/js/sendmail.js"></script>
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/isotope.pkg.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
@@ -899,6 +900,8 @@
   <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/animated-headline.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>const nganhIndex = 4</script>
+  <script src="../assets/js/sendmail.js"></script>
 
 </body>
 
