@@ -435,7 +435,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif; }
 
 .container {
-  max-width: 1170px;
+  max-width: 1320px;
   padding-left: 15px;
   padding-right: 15px; }
   .container1 {
@@ -1236,6 +1236,7 @@ hr {
 4. Button
 ----------------------------------------------------------------*/
 .cs-btns.cs-style1 {
+  padding-bottom: 75px;
   display: flex;
   align-items: center; }
   .cs-btns.cs-style1 .cs-btn:not(:last-child) {
@@ -1381,7 +1382,7 @@ hr {
 
 .cs-btn.cs-style3 {
   display: inline-flex;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.4em;
   position: relative;
   padding-bottom: 3px; }
@@ -2660,7 +2661,7 @@ input#submit {
 
 .cs-site__header.cs-style1 {
   transition: all 0.4s ease;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0; }
@@ -3324,6 +3325,8 @@ input#submit {
   z-index: 1; }
 
 .cs-social__btns.cs-style1 {
+  padding-top: 21px;
+    justify-content: center;
   display: flex;
   flex-wrap: wrap; }
   .cs-social__btns.cs-style1 a {
@@ -3538,9 +3541,9 @@ input#submit {
   color: #5e2ced;
   line-height: 1.25em; }
 .cs-counter.cs-style1 .cs-counter__title {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
   margin-bottom: 0; }
 
 .cs-counter.cs-style2 {
@@ -3590,6 +3593,7 @@ input#submit {
     line-height: 1em; }
 
 .cs-counter3__wrap__out {
+  display: flex;
   margin-top: -100px;
   position: relative;
   z-index: 5; }
@@ -3604,11 +3608,16 @@ input#submit {
   .cs-counter3__wrap .cs-counter.cs-style3 {
     padding: 20px 15px; }
   .cs-counter3__wrap.cs-color1 {
-    background-color: #453b6f; }
+    background-color: #fff; }
     .cs-counter3__wrap.cs-color1 .cs-counter__title,
     .cs-counter3__wrap.cs-color1 .cs-counter__number {
-      color: #fff; }
-
+      color: #453b6f; }
+      .cs-counter__right {
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+      }
 /* Odometer */
 .odometer.odometer-auto-theme,
 .odometer.odometer-auto-theme .odometer-digit,
@@ -3698,7 +3707,7 @@ input#submit {
     font-size: 22px; }
 
   .cs-counter.cs-style3 .cs-counter__number {
-    font-size: 38px; } }
+    font-size: 25px; } }
 @media screen and (max-width: 575px) {
   .cs-counter.cs-style2 {
     margin: auto;
@@ -4138,18 +4147,21 @@ a.cs-demo__box.cs-style1:hover {
 .cs-form.cs-style2 textarea {
   height: 120px; }
 .first-img{
-  width:750px; height: 750px; border-radius: 10px;
+  width: 780px; height: 675px; border-radius: 10px;
 }
 .cs-form.cs-style3 .cs-text__box__title {
   font-size: 40px;
   font-weight: 800;
   color: #fff;
   margin-bottom: 70px; }
-@media only screen and (max-width:1200px) {
-  .cs-to__right{
-    position: absolute !important;
-    top: 100px;
-  }
+  @media only screen and (max-width: 1200px) {
+    .cs-hero.cs-style1 {
+      padding-top: 495px; }
+    .cs-to__right {
+      position: absolute !important;
+      top: 50px;
+    }
+
   .first-img{
     width: 450px;
     height: 400px;
@@ -4158,6 +4170,7 @@ a.cs-demo__box.cs-style1:hover {
   }
 }
 @media screen and (max-width: 1023px) {
+  
   .cs-form__wrap.cs-style1 {
     flex-direction: column;
     padding: 60px 0px; }
@@ -4168,6 +4181,9 @@ a.cs-demo__box.cs-style1:hover {
   .cs-form.cs-style3 .cs-text__box__title {
     margin-bottom: 40px; } }
 @media screen and (max-width: 739px) {
+  .hide-on-small-screen {
+    display: none;
+  }
   .cs-form__field {
     padding: 5px 15px; }
 
@@ -4181,7 +4197,7 @@ a.cs-demo__box.cs-style1:hover {
 22. Hero
 ----------------------------------------------------------------*/
 .cs-hero.cs-style1 {
-  height: 850px;
+  height: 750px;
   overflow: hidden;
   position: relative;
   background-color: #fbfbfd; }
@@ -4626,7 +4642,7 @@ a.cs-demo__box.cs-style1:hover {
     height: 1500px; }
 
   .cs-hero.cs-style1.cs-type1 .cs-hero__text {
-    padding-top: 0; }
+    padding-top: 130px; }
 
   .cs-hero.cs-style4 .cs-hero__title br,
   .cs-hero.cs-style5 .cs-hero__title br,
@@ -4732,7 +4748,7 @@ a.cs-demo__box.cs-style1:hover {
     margin-bottom: 30px; }
 
   .cs-hero.cs-style1 {
-    padding-top: 150px; }
+    padding-top: 395px; }
 
   .cs-hero.cs-style2 .cs-hero__title {
     font-size: 40px;
@@ -6123,3 +6139,45 @@ transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   text-align: center;
 }
 
+.platfrom-area{
+  background-image: url(../img/medical/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.platfrom-area1{
+  background-image: url(../img/medical/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (max-width: 480px) {
+  .cs-hero.cs-style1.cs-type1 .cs-hero__text {
+    padding-top: 15px; }
+  }
+  .white-text {
+    color: #fff; 
+  }
+  .cs-counter3__wrap > .cs-counter {
+    border-right: 1px solid #ccc; /* Tạo thanh dọc ngăn cách */
+  }
+  
+  /* Xóa thanh dọc ngăn cách của phần tử cuối cùng */
+  .cs-counter3__wrap > .cs-counter:last-child {
+    border-right: none;
+  }
+  /* Căn giữa nội dung trong .cs-social__btns và tạo khoảng cách giữa các icon */
+.cs-social__btn1s {
+  display: flex;
+  justify-content: center; 
+}
+.cs-social__btn1s a {
+  color: white; 
+  
+  margin: 5px 7px; 
+  transition: color 0.3s ease; 
+}
+
+.cs-social__btn1s a:hover {
+  color: #5e2ced; 
+}
