@@ -45,7 +45,7 @@
 body,
 html {
   color: #5d6b85;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.9em;
   overflow-x: hidden; }
@@ -58,7 +58,7 @@ h3,
 h6 {
   clear: both;
   color: #263a5d;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0 0 20px 0;
   font-weight: 500;
@@ -429,10 +429,10 @@ a:hover {
 .comment-list .fn,
 .comment-list .comment-meta,
 .cs-counter__number {
-  font-family: 'Mulish', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .cs-secondary__font {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .container {
   max-width: 1320px;
@@ -4219,7 +4219,7 @@ a.cs-demo__box.cs-style1:hover {
     min-width: 900px; }
   .cs-hero.cs-style1 .cs-hero__title {
     font-size: 60px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
 }
 
 .cs-hero.cs-style1 .cs-hero__title .italic-text {
@@ -5606,7 +5606,7 @@ ul.page-numbers {
   .cs-post.cs-style1 .cs-post__title {
     font-size: 24px;
     font-weight: 800;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0; }
     .cs-post.cs-style1 .cs-post__title a:hover {
       color: #5e2ced; }
@@ -5751,7 +5751,7 @@ ul.page-numbers {
   font-size: 40px;
   margin: 0;
   font-weight: 800; 
-  font-family: 'Roboto', sans-serif;}
+  font-family: "Roboto", sans-serif;}
 .cs-section__heading.cs-style1.cs-white .cs-section__subtitle,
 .cs-section__heading.cs-style1.cs-white .cs-section__title {
   color: #fff; }
@@ -5778,7 +5778,7 @@ ul.page-numbers {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 40px; 
-  font-family: 'Roboto', sans-serif;}
+  font-family: "Roboto", sans-serif;}
 
 .cs-section__heading.cs-style3 .cs-section__title {
   font-size: 30px;
@@ -6002,7 +6002,7 @@ ul.page-numbers {
   line-height: 1.2em;
   margin-bottom: 22px; }
 .cs-text__box.cs-style1 .cs-text__box__title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 0; }
