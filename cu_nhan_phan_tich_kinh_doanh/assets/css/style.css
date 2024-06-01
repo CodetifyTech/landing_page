@@ -43,7 +43,7 @@
 1. Typography
 ----------------------------------------------------------------*/
 :root {
-  --fontFamily:  "Roboto", sans-serif;
+  --fontFamily:  "Roboto", ;
   --mainColor: #03045e;
   --secounderyColor: #30bead;
   --paragraphColor: #7b7b8a;
@@ -57,7 +57,7 @@
 body,
 html {
   color: #5d6b85;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', ;
   font-size: 16px;
   line-height: 1.9em;
   overflow-x: hidden; }
@@ -70,7 +70,7 @@ h3,
 h6 {
   clear: both;
   color: #263a5d;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', ;
   padding: 0;
   margin: 0 0 10px 0;
   font-weight: 500;
@@ -440,10 +440,10 @@ a:hover {
 .comment-list .fn,
 .comment-list .comment-meta,
 .cs-counter__number {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', ; }
 
 .cs-secondary__font {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', ; }
 
 .container {
   max-width: 1170px;
@@ -515,7 +515,7 @@ hr {
 
 .cs-review {
   color: #fdc716;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto";
   font-size: 15px;
   line-height: 1.2em;
   width: 102px;
@@ -2165,7 +2165,7 @@ hr {
   .cs-sidebar__item.widget_nav_menu a:before {
     content: "\f101";
     font-weight: 900;
-    font-family: 'Roboto', sans-serif;;
+    font-family: "Roboto";
     margin-right: 10px;
     position: relative;
     top: 1px; }
@@ -2436,7 +2436,7 @@ hr {
   display: inline-block; }
   .comment-list .reply a:after {
     content: "\f3e5";
-    font-family: 'Roboto', sans-serif;;
+    font-family: "Roboto";
     font-weight: 900;
     font-size: 14px;
     margin-left: 3px; }
@@ -2879,7 +2879,7 @@ input#submit {
           color: #5e2ced; }
         .cs-nav .cs-nav__list > li.menu-item-has-children > a:after {
           content: "\f0d7";
-          font-family:'Roboto', sans-serif;;
+          font-family: "Roboto";
           font-weight: 800;
           font-size: 14px;
           margin-left: 6px;
