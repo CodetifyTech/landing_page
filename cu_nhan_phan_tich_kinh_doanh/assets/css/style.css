@@ -440,10 +440,10 @@ a:hover {
 .comment-list .fn,
 .comment-list .comment-meta,
 .cs-counter__number {
-  font-family: 'Mulish', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .cs-secondary__font {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .container {
   max-width: 1170px;
@@ -515,7 +515,7 @@ hr {
 
 .cs-review {
   color: #fdc716;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 1.2em;
   width: 102px;
@@ -2165,7 +2165,7 @@ hr {
   .cs-sidebar__item.widget_nav_menu a:before {
     content: "\f101";
     font-weight: 900;
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Roboto', sans-serif;;
     margin-right: 10px;
     position: relative;
     top: 1px; }
@@ -2436,7 +2436,7 @@ hr {
   display: inline-block; }
   .comment-list .reply a:after {
     content: "\f3e5";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Roboto', sans-serif;;
     font-weight: 900;
     font-size: 14px;
     margin-left: 3px; }
@@ -2879,7 +2879,7 @@ input#submit {
           color: #5e2ced; }
         .cs-nav .cs-nav__list > li.menu-item-has-children > a:after {
           content: "\f0d7";
-          font-family: "Font Awesome 5 Free";
+          font-family:'Roboto', sans-serif;;
           font-weight: 800;
           font-size: 14px;
           margin-left: 6px;
