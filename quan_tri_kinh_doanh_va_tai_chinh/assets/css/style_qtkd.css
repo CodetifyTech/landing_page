@@ -4305,7 +4305,9 @@ a.cs-demo__box.cs-style1:hover {
       margin-right: 10px; }
 
 .cs-partical__shape {
-  position: absolute; }
+  position: absolute;
+  z-index: -1;  
+}
 
 .cs-shape__position1 {
   left: 4%;
