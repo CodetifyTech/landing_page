@@ -690,7 +690,7 @@ hr {
     width: calc(100% - 25px);
     right: 0;
     bottom: 0;
-    background-color: #e0e0e0;
+    background-color: #adadad;
     position: absolute;
     border-radius: inherit; }
   .cs-image2.cs-space__right50 {
@@ -4305,7 +4305,9 @@ a.cs-demo__box.cs-style1:hover {
       margin-right: 10px; }
 
 .cs-partical__shape {
-  position: absolute; }
+  position: absolute;
+  z-index: -1;  
+}
 
 .cs-shape__position1 {
   left: 4%;
